@@ -1,0 +1,66 @@
+/*****************************************************************
+	A-Z Filter
+******************************************************************/
+
+#title-status {
+	float: left;
+	width: 100%;
+}
+	#title-status p {
+		float: left;
+		width: 50%;
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+		#title-status span {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	#title-status p:last-child {
+		text-align: right;
+		text-decoration: underline;
+		color: #de466c;
+		cursor: pointer;
+	}
+
+#a-z {
+	float: left;
+    width: 100%;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: row;
+}
+	ul#a-z li {
+		flex-grow: 1;
+		padding: 7px;
+		text-align: center;
+		background: #dadbdc;
+		color: #fff;
+		text-transform: uppercase;
+		border-left: 2px solid #fff;
+	}
+	ul#a-z li.active {
+		background: #9c9c9c;
+		cursor: pointer;
+	}
+
+	ul#a-z li.current {
+		background: #de466c;
+	}
+	ul#a-z li:first-child {
+		border: 0px none;
+	}
+
+#posts-results {
+}
+	#posts-results li {
+		display: none;
+	}
+	#posts-results li.show {
+		display: block;
+	}
+	#posts-results a {
+		border-bottom: 1px solid #ccc;
+		display: block;
+		padding: 10px 0;
+	}
