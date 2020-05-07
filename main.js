@@ -14,10 +14,10 @@ jQuery(document).ready(function()
 	jQuery('az_li:eq(0)').addClass('current');
 	title_showing.text(initial_first_letter);
 	
+	// Click A-Z menu item
 	jQuery('#a-z li.active').click(function()
 	{
 		jQuery("#posts-results li").removeClass('show');
-		
 		click_first_char = jQuery(this).data('letter');
 		jQuery('#a-z li.active').removeClass('current');
 		title_showing.text(click_first_char);
