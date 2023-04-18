@@ -1,4 +1,4 @@
-<?php /* Template name: A-Z */
+<?php /* Template name: A-Z Filter */
 get_header(); ?>
        
 	<div id="main-area">
@@ -20,8 +20,6 @@ get_header(); ?>
 				$posts_array[] = strtolower(get_the_title()[0]);
 			endwhile; ?>
 				
-				
-			<?php // ?>
 			<ul id="a-z">
 				<?php 
 				$alphabet_array = range('a', 'z');
