@@ -24,7 +24,6 @@ get_header(); ?>
 				<?php 
 				$alphabet_array = range('a', 'z');
 				$number_array = range(0, 9); 
-				//$build_li = '';
 				
 				// Check if number
 				if(count(array_intersect($posts_array, $number_array)) > 0){
@@ -34,7 +33,6 @@ get_header(); ?>
 				{
 					echo "<li data-letter=\"#\">#</li>";
 				}
-				//echo "<li $build_li>" . '#' . '</li>';
 				
 				foreach ($alphabet_array as $letter)
 				{
